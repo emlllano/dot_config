@@ -1,0 +1,102 @@
+{
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar position (top|bottom|left|right)
+    "height": 26, // Waybar height (to be removed for auto height)
+    "spacing": 15, // Gaps between modules (15px)
+    "fixed-center": true,
+    "width": 1900,
+    "margin": 5,
+    // Choose the order of the modules
+    "modules-left": ["hyprland/workspaces", "hyprland/window"],
+    "modules-center":[""],
+    "modules-right": ["pulseaudio","disk","cpu","memory", "tray", "network", "custom/weather", "clock"],
+
+    // Modules configuration
+
+    "hyprland/workspaces": {
+	"format": "{name}",
+       "persistent-workspaces": {
+             "*": 10, // 5 workspaces by default on every monitor
+
+       }
+
+	},
+
+    "disk": {
+		"interval": 30,
+		"format": "<span color=\"#ebebeb\">disk: </span>{percentage_used}%",
+		"path": "/"
+	},
+
+
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 10
+    },
+
+    "clock": {
+        "timezone": "Europe/Paris",
+	"interval": 1,
+        "format": "{:%H:%M:%S} <span color=\"#FFFFFF\"></span>",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><big>{calendar}</big></tt>"
+    },
+
+    "cpu": {
+        "format": "<span color=\"#ebebeb\">cpu: </span>{usage}%",
+        "tooltip": false
+    },
+
+    "memory": {
+        "format": "<span color=\"#ebebeb\">ram: </span>{}%"
+    },
+
+    "network": {
+        "format-wifi": "{essid} ({signalStrength}%) <span color=\"#FFFFFF\"></span> ",
+        "format-ethernet": "<span color=\"#ebebeb\"></span>",
+        "tooltip-format": "{ifname} via {gwaddr} <span color=\"#FFFFFF\"></span>",
+        "format-linked": "{ifname} (No IP) <span color=\"#FFFFFF\"></span>",
+        "format-disconnected": "Disconnected 轢",
+        //"format-alt": "{ifname}: {ipaddr}/{cidr}"
+        "on-click": "~/.config/rofi/bin/network_menu",
+        "on-click-right": "nm-connection-editor"
+    },
+
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "<span color=\"#ebebeb\">{icon}: </span>{volume}%",
+        "format-bluetooth": "<span color=\"#ebebeb\">{icon}vol</span> {volume}%",
+        "format-bluetooth-muted": "MUTE 婢 ",
+        "format-muted": "MUTED",
+        "format-source": "{volume}% <span color=\"#ebebeb\">vol</span>",
+        "format-source-muted": "MUTED",
+        "format-icons": {
+            "default": ["vol", "vol", "vol", "vol", "vol", "vol"]
+        },
+        "on-double-click": "pavucontrol",
+        "on-click": "pulsemixer --unmute",
+        "on-click-right": "pulsemixer --mute"
+    },
+
+    "custom/updates": {
+        "format": "{}",
+        "exec": "~/.config/hypr/waybar/scripts/update-sys",
+        "on-click": "~/.config/hypr/waybar/scripts/update-sys update",
+        "interval": 300,
+        "tooltip": true
+  },
+
+
+    "hyprland/window": {
+		"format": "   {}",
+		"max-length": 200,
+		"separate-outputs": true
+},
+
+	"custom/weather": {
+
+		"format": "<span color=\"#ebebeb\"> {} </span>",
+		"exec"  : "curl -s wttr.in/Toulouse?format=%c%t+%P",
+		"interval" : 200,
+		"tooltip"  : false
+	}
+}
