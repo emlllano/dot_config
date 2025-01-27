@@ -1,0 +1,81 @@
+* {
+    
+    font-family: "SourceCodePro";
+    font-size: 12px;
+    border-top: 1px;
+    border: rgba(00, 00, 00, 0);
+    min-height: 26px;
+    margin: 1px 1px;
+}
+
+#waybar {
+    background-color: rgba(24, 24, 24, 0);
+    color: #ebebeb;
+    border-radius: 5px;
+    border: 1px solid rgba(230, 230, 230, 0);
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+
+#clock,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#tray,
+#mpd,
+#disk,
+#battery,
+#backlight,
+#workspaces {
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+    color: #ebebeb;
+    margin: 1px 1px;
+    border-radius: 5px;
+    border: 0px solid #ffffff;
+}
+
+#memory {
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#workspaces button {
+    font-weight: bold;
+    padding: 0;
+    border-radius: 5px;
+    font-size: 0.9em;
+    margin: 2px 2px;
+}
+#workspaces button.active {
+    border-radius: 0%;
+    color: #ffffff;
+    margin: 0px 0px;
+}
+
+#battery.charging,
+#battery.plugged {
+    color: #ffffff;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
+
+#custom-menu {
+    padding-left: 0.1em;
+    padding-right: 0.3em;
+    border-radius: 5px;
+    font-size: 1.6em;
+    border: 0px solid #4287f5;
+}
+
+
