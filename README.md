@@ -3,8 +3,8 @@
  My personnal config files for hyprland and my hypr environement,
 feel free to use any of this.
 
-bar = waybar
-pulseaudio binds
+<p1>bar = waybar</p1>
+<p2>pulseaudio binds</p2>
 
 Screenshots below.
 
