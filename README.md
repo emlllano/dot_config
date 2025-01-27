@@ -1,12 +1,19 @@
-# dot_config
+# dot_config / hyprland config, dotfiles
 
  My personnal config files for hyprland and my hypr environement,
 feel free to use any of this.
 
 <p1>bar = waybar</p1>
 
+wofi as my launcher
 
-<p2>pulseaudio binds</p2>
+alacritty as my terminal
+
+font (is unified across all programs) = SourceCodePro
+
+cursor = ![Capitaine Cusrors](https://github.com/keeferrourke/capitaine-cursors"Optional Title")
+
+
 
 Screenshots below.
 
