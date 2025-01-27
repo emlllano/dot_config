@@ -4,6 +4,8 @@
 feel free to use any of this.
 
 <p1>bar = waybar</p1>
+
+
 <p2>pulseaudio binds</p2>
 
 Screenshots below.
