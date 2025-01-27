@@ -11,7 +11,7 @@ alacritty as my terminal
 
 font (is unified across all programs) = SourceCodePro
 
-cursor = ![Capitaine Cusrors](https://github.com/keeferrourke/capitaine-cursors"Optional Title")
+cursor = https://github.com/keeferrourke/capitaine-cursors
 
 
 
