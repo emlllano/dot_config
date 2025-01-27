@@ -8,5 +8,5 @@ pulseaudio binds
 
 Screenshots below.
 
-![Alt text](/dot_config/blob/main/2025-01-27-132617_hyprshot.png?raw=true "Optional Title")
-![Alt text](dot_config/blob/main/2025-01-27-071304_hyprshot.png?raw=true "Optional Title")
+![Alt text](https://github.com/emlllano/dot_config/blob/main/2025-01-27-132617_hyprshot.png?raw=true "Optional Title")
+![Alt text](https://github.com/emlllano/dot_config/blob/main/2025-01-27-071304_hyprshot.png?raw=true "Optional Title")
