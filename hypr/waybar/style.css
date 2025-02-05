@@ -52,30 +52,14 @@
     font-size: 0.9em;
     margin: 2px 2px;
 }
+
+#workspaces button:hover {
+	background-color: rgba(24, 24, 24, 0);
+	color: #1a1a1a;
+}
+
 #workspaces button.active {
-    border-radius: 0%;
+    border-radius: 5px;
     color: #ffffff;
     margin: 0px 0px;
 }
-
-#battery.charging,
-#battery.plugged {
-    color: #ffffff;
-}
-
-@keyframes blink {
-    to {
-        background-color: #ffffff;
-        color: #000000;
-    }
-}
-
-#custom-menu {
-    padding-left: 0.1em;
-    padding-right: 0.3em;
-    border-radius: 5px;
-    font-size: 1.6em;
-    border: 0px solid #4287f5;
-}
-
-
